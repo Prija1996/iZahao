@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "ZAHAO Dorks",
+  "version": "1.0",
+  "description": "Barre de recherche Google Dorks toujours accessible",
+  "icons": {
+    "128": "assets/logos.png"
+  },
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["popup/popup.js"],
+    "css": ["popup/popup.css"]
+  }],
+  "host_permissions": ["<all_urls>"]
+}
